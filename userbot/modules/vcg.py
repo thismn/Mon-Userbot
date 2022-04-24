@@ -144,12 +144,12 @@ async def _(event):
                 ),
                 stream_type=StreamType().local_stream,
             )
-            await Mon.edit(
-                f"❏ **Berhasil Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`"
+            await edit_delete(Mon,
+                f"**Join ke Obrolan Suara**\n➥ `{chat_id}`"
             )
         except AlreadyJoinedError:
             return await edit_delete(
-                Mon, "**INFO:** `akun anda sudah berada di obrolan suara`", 45
+                Mon, "**INFO:** `akun anda sudah di obrolan suara`", 45
             )
         except Exception as e:
             return await Mon.edit(f"**INFO:** `{e}`")
@@ -172,7 +172,7 @@ async def vc_end(event):
             await call_py.leave_group_call(chat_id)
             await edit_delete(
                 Mon,
-                f"❏ **Berhasil Turun dari Obrolan Suara**\n└ **Chat ID:** `{chat_id}`",
+                f"**Turun dari Obrolan Suara**\n➥ `{chat_id}`",
             )
         except Exception as e:
             return await Mon.edit(f"**INFO:** `{e}`")
@@ -181,13 +181,13 @@ async def vc_end(event):
 CMD_HELP.update(
     {
         "vcg": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}startvc`\
-         \n↳ : Memulai Obrolan Suara dalam Group.\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}stopvc`\
-         \n↳ : `Menghentikan Obrolan Suara Pada Group.`\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}vctittle <tittle vcg>`\
+         \n↳ : Memulai Obrolan Suara.\
+         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}stopvc`\
+         \n↳ : `Menghentikan Obrolan Suara.`\
+         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}vctittle <tittle vcg>`\
          \n↳ : `Mengubah tittle/judul Obrolan Suara.`\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}vcinvite`\
-         \n↳ : Invite semua member yang berada di group."
+         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}vcinvite`\
+         \n↳ : Mengundang ke Obrolan Suara."
     }
 )
 
