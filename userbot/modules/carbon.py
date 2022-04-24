@@ -10,7 +10,7 @@ from userbot import CMD_HELP
 from userbot.utils import edit_delete, edit_or_reply, my_cmd
 from userbot.utils.misc import Carbon
 
-from .vcg import vcmention
+from .vcplugin import vcmention
 
 all_col = [
     "Black",
