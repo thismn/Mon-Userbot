@@ -145,8 +145,8 @@ async def _(event):
                 stream_type=StreamType().local_stream,
             )
             await edit_delete(Mon,
-                f"**Join ke Obrolan Suara**\n➥ `{chat_id}`"
-            )
+                              f"**Join ke Obrolan Suara**\n➥ `{chat_id}`"
+                              )
         except AlreadyJoinedError:
             return await edit_delete(
                 Mon, "**INFO:** `akun anda sudah di obrolan suara`", 45
