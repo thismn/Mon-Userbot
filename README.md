@@ -38,17 +38,6 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ### ᴏʀɪɢɪɴᴀʟ ʀᴇᴘᴏsɪᴛᴏʀʏ :
 <a href="https://github.com/muhammadrizky16/Kyy-Userbot"><img src="https://img.shields.io/badge/Kyy-Userbot-inactive.svg?style=for-the-badge&logo=github"></a>
 
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<details>
-<summary><b>FOLLOW ME :</b></summary>
-<br>
-<a href="https://github.com/thismn"><img src="https://img.shields.io/badge/My%20GitHub-grey.svg?style=for-the-badge&logo=github"></a> <br>
-<a href="https://t.me/lupakebot"><img src="https://img.shields.io/badge/My%20Telegram-blue.svg?style=for-the-badge&logo=Telegram"></a>
-</details>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-
 <details>
 <summary><b> THANKS YOU TO </b></summary>
 
