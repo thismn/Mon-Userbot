@@ -25,7 +25,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 
 <h2 align="center">
-   ᴍᴇᴛᴏᴅᴇ
+   ᴍᴇᴛᴏᴅᴇ ᴅᴇᴘʟᴏʏ
 </h2>
 
 <p align="center">
