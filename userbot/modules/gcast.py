@@ -142,8 +142,8 @@ async def add(event):
         .replace("]", "")
         .replace("set() ", "")
     )
-    await xxnx.edit(
-        f"**Berhasil Menambahkan** `{gc}` **ke daftar blacklist gcast.**\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan."
+    await edit_delete(
+        xxnx, "**Menambahkan** `{gc}` **ke daftar blacklist gcast.**"
     )
     heroku_Config[var] = blacklistgrup
 
@@ -166,8 +166,8 @@ async def _(event):
     gett = str(gc)
     if gett in blchat:
         blacklistgrup = blchat.replace(gett, "")
-        await xxx.edit(
-            f"**Berhasil Menghapus** `{gc}` **dari daftar blacklist gcast.**\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan."
+        await edit_delete(
+            xxx, "**Menghapus** `{gc}` **dari daftar blacklist gcast.**"
         )
         var = "BLACKLIST_GCAST"
         heroku_Config[var] = blacklistgrup
