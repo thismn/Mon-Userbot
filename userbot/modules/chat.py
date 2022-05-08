@@ -53,11 +53,11 @@ async def _(event):
         r_msg = await event.get_reply_message()
         if r_msg.media:
             bot_api_file_id = pack_bot_file_id(r_msg.media)
-            await edit_or_reply(event, "ID Grup: `{}`\nID Dari Pengguna : `{}`\nID Bot File API: `{}`".format(str(event.chat_id), str(r_msg.sender_id), bot_api_file_id))
+            await edit_or_reply(event, "Chat ID : `{}`\nUser ID : `{}`\nID Bot File API: `{}`".format(str(event.chat_id), str(r_msg.sender_id), bot_api_file_id))
         else:
-            await edit_or_reply(event, "ID Grup: `{}`\nID Dari Pengguna : `{}`".format(str(event.chat_id), str(r_msg.sender_id)))
+            await edit_or_reply(event, "Chat ID : `{}`\nUser ID : `{}`".format(str(event.chat_id), str(r_msg.sender_id)))
     else:
-        await edit_or_reply(event, "ID Grup: `{}`".format(str(event.chat_id)))
+        await edit_or_reply(event, "Chat ID: `{}`".format(str(event.chat_id)))
 
 
 @my_cmd(pattern="link(?: |$)(.*)")
