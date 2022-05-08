@@ -14,7 +14,6 @@ import asyncio
 import os
 
 import heroku3
-from requests import get
 from telethon.errors import FloodWaitError
 
 from userbot import BLACKLIST_GCAST
