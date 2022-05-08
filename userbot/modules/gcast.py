@@ -35,6 +35,7 @@ GCAST_BLACKLIST = [
     -1001318051930,  # Gatau GC mana
     -1001433478384,  # anjay saya bohong
     -1001688172956,  # ga kekinian support
+    -1001459812644,  # GeezSupport
 
 ]
 
@@ -60,14 +61,17 @@ async def gcast(event):
     async for x in event.client.iter_dialogs():
         if x.is_group:
             chat = x.id
-            try:
-                if chat not in GCAST_BLACKLIST and chat not in BLACKLIST_GCAST:
+            if chat not in GCAST_BLACKLIST and chat not in BLACKLIST_GCAST:
+                try:
+                    await event.client.send_message(chat, msg)
+                    await asyncio.sleep(0.1)
+                    done += 1
+                except FloodWaitError as anj:
+                    await asyncio.sleep(int(anj.seconds))
                     await event.client.send_message(chat, msg)
                     done += 1
-                elif chat not in GCAST_BLACKLIST:
-                    pass
-            except BaseException:
-                er += 1
+                except BaseException:
+                    er += 1
     await kk.edit(
         f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
     )
