@@ -19,7 +19,7 @@ import time
 from datetime import datetime
 import psutil
 from userbot import ALIVE_LOGO, BOT_VER, CMD_HELP, StartTime, bot, CMD_HANDLER as cmd
-from userbot.utils import edit_or_reply, edit_delete, my_cmd
+from userbot.utils import bash, edit_or_reply, edit_delete, my_cmd
 
 from .ping import get_readable_time
 
