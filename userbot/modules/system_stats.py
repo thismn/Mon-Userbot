@@ -7,21 +7,27 @@
 
 
 import asyncio
-from asyncio import create_subprocess_exec as asyncrunapp
-from asyncio.subprocess import PIPE as asyncPIPE
-from platform import python_version
-from shutil import which
-from os import remove
-from telethon import __version__, version
 import platform
 import sys
 import time
+from asyncio import create_subprocess_exec as asyncrunapp
+from asyncio.subprocess import PIPE as asyncPIPE
 from datetime import datetime
+from os import remove
+from platform import python_version
+from shutil import which
+
 import psutil
+from telethon import __version__, version
 from userbot import ALIVE_LOGO, BOT_VER, CMD_HELP, StartTime, bot, CMD_HANDLER as cmd
 from userbot.utils import bash, edit_or_reply, edit_delete, my_cmd
 
 from .ping import get_readable_time
+
+try:
+    from carbonnow import Carbon
+except ImportError:
+    Carbon = None
 
 modules = CMD_HELP
 
