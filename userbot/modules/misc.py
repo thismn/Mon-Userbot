@@ -110,7 +110,7 @@ async def repo_is_here(wannasee):
                         "ㅤㅤ━━━━━━━━━━━━\n"
                         "➪ ᴏᴡɴᴇʀ ʙᴏᴛ : [ᴍσɴ](t.me/lupakebot)\n"
                         "➪ ʀᴇᴘᴏsɪᴛᴏʀʏ : [ɢɪᴛʜᴜʙ](https://github.com)\n"
-                        "➪ ᴄʜᴀɴɴᴇʟㅤㅤ: [ᴄʜᴀɴɴᴇʟ](https://t.me/ktsingkat)\n"
+                        "➪ ᴍʏ ᴄʜᴀɴɴᴇʟ : [ᴄʜᴀɴɴᴇʟ](https://t.me/ktsingkat)\n"
                         "ㅤㅤ"
                         )
 
