@@ -106,8 +106,8 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await edit_or_reply(wannasee,
-                        "I am using **__ᴍᴏɴ-ᴜsᴇʀʙᴏᴛ__** \n"
-                        "ㅤㅤ━━━━━━━━━━━━\n"
+                        "__I am using **ᴍᴏɴ-ᴜsᴇʀʙᴏᴛ**__ \n"
+                        "__ㅤ━━━━━━━━━━━━__\n"
                         "➪ ᴏᴡɴᴇʀ ʙᴏᴛ : [ᴍσɴ](t.me/lupakebot)\n"
                         "➪ ʀᴇᴘᴏsɪᴛᴏʀʏ : [ɢɪᴛʜᴜʙ](https://github.com)\n"
                         "➪ ᴍʏ ᴄʜᴀɴɴᴇʟ : [ᴄʜᴀɴɴᴇʟ](https://t.me/ktsingkat)\n"
