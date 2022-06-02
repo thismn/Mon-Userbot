@@ -20,7 +20,7 @@ from shutil import which
 import psutil
 from telethon import __version__, version
 from userbot import ALIVE_LOGO, BOT_VER, CMD_HELP, StartTime, bot, CMD_HANDLER as cmd
-from userbot.utils import bash, edit_or_reply, edit_delete, my_cmd
+from userbot.utils import edit_delete, edit_or_reply, my_cmd
 
 from .ping import get_readable_time
 
@@ -211,8 +211,7 @@ async def redis(alive):
         f"├• **Telethon Version :** `{version.__version__}` \n"
         f"├• **Modules :** `{len(modules)}` Modules \n"
         f"└━━━━━━━━━━━━━━━━━━ \n"
-        f"ㅤㅤㅤ| [ᴄʜᴀɴɴᴇʟ](https://t.me/ktsingkat) | [ɢɪᴛʜᴜʙ](https://github.com) |"
-    )
+        f"ㅤㅤㅤ| [ᴄʜᴀɴɴᴇʟ](https://t.me/ktsingkat) | [ɢɪᴛʜᴜʙ](https://github.com) |")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
