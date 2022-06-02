@@ -180,7 +180,7 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await xx.edit(
-                "ㅤ ㅤㅤ**- ᴅʏɴᴏ ʜᴇʀᴏᴋᴜ -**\n"
+                "ㅤ ㅤㅤ  **- ᴅʏɴᴏ ʜᴇʀᴏᴋᴜ -**\n"
                 "┌━━━━━━━━━━━━━━━━━━\n"
                 f"├• **ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ  :**\n"
                 f"│   `{AppHours}` **ᴊᴀᴍ** - `{AppMinutes}` **ᴍᴇɴɪᴛ**  "
