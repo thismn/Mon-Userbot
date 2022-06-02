@@ -108,9 +108,9 @@ async def repo_is_here(wannasee):
     await edit_or_reply(wannasee,
                         "__I am using **ᴍᴏɴ-ᴜsᴇʀʙᴏᴛ**__ \n"
                         "__ㅤ━━━━━━━━━━━━__\n"
-                        "➪ ᴏᴡɴᴇʀ ʙᴏᴛ : [ᴍσɴ](t.me/lupakebot)\n"
-                        "➪ ʀᴇᴘᴏsɪᴛᴏʀʏ : [ɢɪᴛʜᴜʙ](https://github.com)\n"
-                        "➪ ᴍʏ ᴄʜᴀɴɴᴇʟ : [ᴄʜᴀɴɴᴇʟ](https://t.me/ktsingkat)\n"
+                        "● **ᴏᴡɴᴇʀ :** [ᴍσɴ](t.me/lupakebot)\n"
+                        "● **ᴄʜᴀɴɴᴇʟ :** [ᴄʜᴀɴɴᴇʟ](https://t.me/ktsingkat)\n"
+                        "● **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [ɢɪᴛʜᴜʙ](https://github.com)\n"
                         "ㅤㅤ"
                         )
 
