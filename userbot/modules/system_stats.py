@@ -32,21 +32,6 @@ except ImportError:
 modules = CMD_HELP
 
 
-@my_cmd(
-    pattern="sysinfo$",
-)
-async def _(e):
-    xxnx = await edit_or_reply(e, "`Processing...`")
-    x, y = await bash("neofetch|sed 's/\x1B\\[[0-9;\\?]*[a-zA-Z]//g' >> neo.txt")
-    with open("neo.txt", "r") as neo:
-        p = (neo.read()).replace("\n\n", "")
-    ok = Carbon(base_url="https://carbonara.vercel.app/api/cook", code=p)
-    haa = await ok.memorize("neofetch")
-    await e.reply(file=haa)
-    await xxnx.delete()
-    remove("neo.txt")
-
-
 @my_cmd(pattern="spc")
 async def psu(event):
     uname = platform.uname()
@@ -217,7 +202,7 @@ async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**__ᴍᴏɴ-ᴜsᴇʀʙᴏᴛ__** is alive. \n\n"
+        f"━━━━|**ᴜsᴇʀʙᴏᴛ ɪs ᴀʟɪᴠᴇ**|━━━━\n\n"
         f"┌━━━━━━━━━━━━━━━━━━ \n"
         f"├• **Name :** [{user.first_name}](tg://user?id={user.id}) \n"
         f"├• **Username :** @{user.username} \n"
@@ -226,7 +211,7 @@ async def redis(alive):
         f"├• **Telethon Version :** `{version.__version__}` \n"
         f"├• **Modules :** `{len(modules)}` Modules \n"
         f"└━━━━━━━━━━━━━━━━━━ \n"
-        f"ㅤㅤㅤ| **[ᴄʜᴀɴɴᴇʟ](https://t.me/ktsingkat)** | **[ɢɪᴛʜᴜʙ](https://github.com)** |"
+        f"ㅤㅤㅤ| [ᴄʜᴀɴɴᴇʟ](https://t.me/ktsingkat) | [ɢɪᴛʜᴜʙ](https://github.com) |"
     )
     if ALIVE_LOGO:
         try:
