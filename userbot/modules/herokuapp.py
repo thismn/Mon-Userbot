@@ -16,7 +16,6 @@ from userbot import (
     BOTLOG,
     BOTLOG_CHATID,
     CMD_HELP,
-    owner,
 )
 from userbot.utils import edit_or_reply, edit_delete, my_cmd
 
