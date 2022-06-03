@@ -505,7 +505,7 @@ else:
 
 
 def paginate_help(page_number, loaded_modules, prefix):
-    number_of_rows = 6
+    number_of_rows = 5
     number_of_cols = 2
     global looters
     looters = page_number
@@ -948,7 +948,7 @@ with bot:
             buttons = [
                 (custom.Button.inline("ʙᴜᴋᴀ ᴍᴇɴᴜ", data="gcback"),),
             ]
-            await event.edit("**ɪɴʟɪɴᴇ ᴍᴇɴᴜ ᴅɪᴛᴜᴛᴜᴘ​!**", file=mylogo, buttons=buttons)
+            await event.edit("**ɪɴʟɪɴᴇ ᴍᴇɴᴜ ᴅɪᴛᴜᴛᴜᴘ​**", file=mylogo, buttons=buttons)
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(
